@@ -1,5 +1,15 @@
 @font-face {
   font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  src: local(Inter),
+      url("../fonts/Inter-Bold.woff2") format('woff2'),
+      url("../fonts/Inter-Bold.woff") format('woff'),
+      url("../fonts/Inter-Bold.eot") format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
   font-weight: 600;
   font-style: normal;
   src: local(Inter),
@@ -26,15 +36,5 @@
       url("../fonts/Inter-Regular.woff2") format('woff2'),
       url("../fonts/Inter-Regular.woff") format('woff'),
       url("../fonts/Inter-Regular.eot") format('eot');
-  font-display: swap;
-}
-@font-face {
-  font-family: RedRose;
-  font-weight: 700;
-  font-style: normal;
-  src: local(RedRose),
-      url("../fonts/RedRose-Bold.woff2") format('woff2'),
-      url("../fonts/RedRose-Bold.woff") format('woff'),
-      url("../fonts/RedRose-Bold.eot") format('eot');
   font-display: swap;
 }

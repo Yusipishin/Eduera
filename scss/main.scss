@@ -1,8 +1,8 @@
 html, body {
   color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
   background: #162359;
   scroll-behavior: smooth;
   font-family: 'Inter', sans-serif;
@@ -18,4 +18,116 @@ html, body {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1650px;
+}
+
+.link {
+  transition: all 0.3s;
+}
+
+.link:hover {
+  transform: scale(1.05);
+}
+
+.yellow-txt {
+  color:#FFD054
+}
+
+.header {
+  margin: 31px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    gap: 60px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 500;
+  } 
+  &__btn {
+    color: #fff;
+    padding: 18px 63px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+  }
+}
+
+.hero {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__numbers {
+    display: flex;
+    max-width: 80px;
+  }
+  &__inner {
+    display: flex;
+    max-width: 552px;
+    color: #D9ECFF;
+    text-align: center;
+    align-items: center;
+    padding: 75px 15px 75px 0;
+    justify-content: space-around;
+    background: url(../img/icons/union-ic.svg) 50% 50% / cover no-repeat;
+  }
+  &__imgs {
+    position: relative;
+    margin: 0 -131px -58px 0;
+  }
+  &__play {
+    top: 141px;
+    left: 94px;
+    position: absolute;
+  }
+  &__number {
+    font-size: 44px;
+  }
+  &__number-txt {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__title {
+    font-size: 70px;
+    letter-spacing: -0.02em;
+  }
+  &__descr {
+    color: #D0D3DB;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 43px 0 64px 0;
+  }
+  &__btns {
+    margin-bottom: 66px;
+  }
+  &__btn {
+    color: #fff;
+    padding: 24px 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 25px 35px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  &__btn:first-child {
+    margin-right: 26px;
+  }
+  &__title-txt {
+    display: block;
+    position: relative;
+  }
+  &__title-txt::after {
+    top: 25%;
+    content: '';
+    width: 57px;
+    height: 56px;
+    position: absolute;
+    background: url(../img/icons/courses-ic.svg) 50% 50% / cover no-repeat;
+  }
 }
